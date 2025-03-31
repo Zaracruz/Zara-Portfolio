@@ -1,0 +1,160 @@
+﻿/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250);
+    color: #333;
+}
+
+header {
+    background-color: #1E3A5F;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.topnav {
+    overflow: hidden;
+    background-color: ghostwhite;
+}
+
+    .topnav a {
+        float: left;
+        color: #ddd;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .topnav a:hover {
+            background-color: #ccc;
+            color: black;
+        }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: ghostwhite;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #222;
+        display: block;
+        transition: 0.3s;
+        text-shadow: 2px 2px 5px #555;
+    }
+
+        .sidenav a:hover {
+            color: #fff;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+footer {
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #1E3A5F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Project Section Styles */
+.project {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-details, .project-url, .image-gallery {
+    margin-bottom: 30px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1E3A5F;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-url a {
+    font-size: 18px;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image {
+    width: calc(50% - 20px); /* Two images per row */
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.image p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%; /* Stack images in a single column on smaller screens */
+    }
+}
+
+.website-url {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E3A5F;
+    word-break: break-all; /* Ensures long URLs wrap if needed */
+}
+
